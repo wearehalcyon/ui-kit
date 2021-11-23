@@ -1,21 +1,3 @@
-:root {
-  --bgColor: #1a1a1a;
-  --transparentBg: rgba(30,30,30,.7);
-  --textColor: #d3d3d3;
-  --acrylic: blur(40px) saturate(1.5);
-  --borderColor: #2a2a2a;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    --bgColor: #e9e9e9;
-    --transparentBg: rgba(255,255,255,.7);
-    --textColor: #000;
-    --acrylic: blur(40px) saturate(1.5);
-    --borderColor: #dfdfdf;
-  }
-}
-
 .wrapp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +32,28 @@
   height: auto;
 }
 
+.wrapp .sidebar .navigation {
+  display: block;
+  position: relative;
+}
+
+.wrapp .sidebar .navigation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.wrapp .sidebar .navigation ul li {
+  display: block;
+  margin: 2px 10px;
+}
+
+.wrapp .sidebar .navigation ul li a {
+  display: block;
+  position: relative;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
 .wrapp .content {
   display: block;
   position: relative;
@@ -75,12 +79,54 @@
           backdrop-filter: var(--acrylic);
   -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
   z-index: 9999;
 }
 
 .wrapp .content .top-bar .title {
   display: inline-block;
-  padding: 15px 30px;
   margin: 0;
+}
+
+.wrapp .content .top-bar .head-buttons {
+  position: relative;
+}
+
+.wrapp .content .top-bar .head-buttons a {
+  margin-left: 10px;
+}
+
+.wrapp .content .logo {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.wrapp .content .logo img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  height: 120px;
+  max-height: auto;
+}
+
+.wrapp .content p.description {
+  padding: 30px 0;
+}
+
+.wrapp .content ul {
+  margin: 0;
+}
+
+.wrapp .content ul li {
+  margin: 10px 0;
+}
+
+.wrapp .content ul li a {
+  text-decoration: none;
+}
+
+.wrapp .content .main-title {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */
