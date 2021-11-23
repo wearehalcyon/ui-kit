@@ -18,6 +18,20 @@
   --buttonBg: rgba(255,255,255,.05);
   --borderColor: #2a2a2a;
   --boxShadow: 0px 3px 10px rgba(0,0,0,.1);
+  --default: #f0f0f0;
+  --success: #13d53a;
+  --light: #f9f9f9;
+  --dark: #333;
+  --alert: #ffc64d;
+  --danger: #e63838;
+  --light: #fff;
+  --defaultHover: #f0f0f0;
+  --successHover: #10e43a;
+  --lightHover: #f9f9f9;
+  --darkHover: #555;
+  --alertHover: #ffbf35;
+  --dangerHover: #ff1b1b;
+  --lightHover: #e9e9e9;
 }
 
 @media (prefers-color-scheme: light) {
@@ -434,5 +448,160 @@ strong {
   border-color: var(--linkHover);
   color: #fff;
   background-color: var(--linkHover);
+}
+
+.button-success {
+  border-color: var(--success);
+  color: #fff !important;
+  background-color: var(--success);
+}
+
+.button-success:hover {
+  border-color: var(--successHover);
+  color: #fff;
+  background-color: var(--successHover);
+}
+
+.button-alert {
+  border-color: var(--alert);
+  color: #000 !important;
+  background-color: var(--alert);
+}
+
+.button-alert:hover {
+  border-color: var(--alertHover);
+  color: #000;
+  background-color: var(--alertHover);
+}
+
+.button-danger {
+  border-color: var(--danger);
+  color: #fff !important;
+  background-color: var(--danger);
+}
+
+.button-danger:hover {
+  border-color: var(--dangerHover);
+  color: #fff;
+  background-color: var(--dangerHover);
+}
+
+.button-dark {
+  border-color: var(--dark);
+  color: #fff !important;
+  background-color: var(--dark);
+}
+
+.button-dark:hover {
+  border-color: var(--darkHover);
+  color: #fff;
+  background-color: var(--darkHover);
+}
+
+.button-light {
+  border-color: var(--light);
+  color: #000 !important;
+  background-color: var(--light);
+}
+
+.button-light:hover {
+  border-color: var(--lightHover);
+  color: #000;
+  background-color: var(--lightHover);
+}
+
+.button-small {
+  font-size: 13px;
+}
+
+.button-large {
+  font-size: 20px;
+  padding: 10px 40px;
+}
+
+.bg-color-default {
+  background-color: var(--default);
+}
+
+.bg-color-success {
+  background-color: var(--success);
+}
+
+.bg-color-primary {
+  background-color: var(--primary);
+}
+
+.bg-color-danger {
+  background-color: var(--danger);
+}
+
+.bg-color-alert {
+  background-color: var(--alert);
+}
+
+.bg-color-dark {
+  background-color: var(--dark);
+}
+
+.bg-color-light {
+  background-color: var(--light);
+}
+
+.hn-form {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.formcontrol {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.hn-input {
+  width: 100%;
+  border: 1px solid;
+  border-color: var(--borderColor);
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: var(--transparentBg);
+  color: var(--textColor);
+}
+
+.hn-input:focus {
+  border-color: var(--linkColor);
+}
+
+.hn-textarea-default {
+  width: 100%;
+  border: 1px solid;
+  border-color: var(--borderColor);
+  font-size: 18px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  height: 150px;
+  background-color: var(--transparentBg);
+  color: var(--textColor);
+}
+
+.hn-textarea-default:focus {
+  border-color: var(--linkColor);
+}
+
+.textarea-noresize {
+  resize: none;
+}
+
+.input-small {
+  font-size: 14px;
+}
+
+.input-large {
+  font-size: 20px;
+  padding: 10px 15px;
 }
 /*# sourceMappingURL=halcyon.ui.kit.css.map */

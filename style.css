@@ -129,4 +129,33 @@
 .wrapp .content .main-title {
   margin-top: 50px;
 }
+
+.wrapp .content .subtitle {
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.wrapp .content .colors-list,
+.wrapp .content .buttons-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.wrapp .content .colors-list .color-item,
+.wrapp .content .buttons-list .color-item {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+.wrapp .content .colors-list a,
+.wrapp .content .buttons-list a {
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
 /*# sourceMappingURL=style.css.map */
